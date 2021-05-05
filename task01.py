@@ -1,10 +1,9 @@
-# Prediction using Supervised ML
-# Task 01 by JERIN PHILIP
+# Task 01 : Prediction using Supervised ML
+# By JERIN PHILIP
 
 # Predict the percentage of an student based on the no. of study hours.
 
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 
@@ -16,7 +15,7 @@ print("Data imported successfully")
 print(s_data.head(10))
 
 # Plotting the distribution of scores
-s_data.plot(x='Hours', y='Scores', style='o')
+s_data.plot(x='Hours', y='Scores', style='+', color="green")
 plt.title('Hours vs Percentage', color="red")
 plt.xlabel('Hours Studied', color="red")
 plt.ylabel('Percentage Score', color="red")
@@ -65,8 +64,12 @@ pred = regressor.predict([[hours]])
 print("No of Hours = {}".format(hours))
 print("Predicted Score = {}".format(pred[0]))
 
+print("-----------------------")
+
 # Evaluating the model
 print("Evaluating the model")
 
 from sklearn import metrics
 print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))
+print("-----------------------")
+print("THANK YOU")
