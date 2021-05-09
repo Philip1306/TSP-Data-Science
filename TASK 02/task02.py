@@ -54,7 +54,7 @@ plt.scatter(x[y_pred == 1, 0], x[y_pred == 1, 1], s=50, c='blue', label='Iris-ve
 # Cluster 03
 plt.scatter(x[y_pred == 2, 0], x[y_pred == 2, 1], s=50, c='green', label='Iris-virginica')
 
-# Plotting the centroids of the clusters
+# Plotting the centroids of the cluster
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=50, c='yellow', label='Centroids')
 
 plt.show()
